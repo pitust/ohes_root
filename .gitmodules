@@ -1,0 +1,3 @@
+[submodule "kernel"]
+	path = kernel
+	url = git@github.com:pitust/ohes_kernel.git
