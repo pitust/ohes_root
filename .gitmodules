@@ -1,3 +1,6 @@
 [submodule "kernel"]
 	path = kernel
 	url = git@github.com:pitust/ohes_kernel.git
+[submodule "ohbuild"]
+	path = ohbuild
+	url = git@github.com:pitust/ohbuild.git
