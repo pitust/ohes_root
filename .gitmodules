@@ -4,3 +4,6 @@
 [submodule "ohbuild"]
 	path = ohbuild
 	url = git@github.com:pitust/ohbuild.git
+[submodule "ohprogs"]
+	path = ohprogs
+	url = git@github.com:pitust/ohes_progs.git
