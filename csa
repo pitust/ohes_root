@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+if [ $1 = _createf ]; then
+    FILE=$2
+    if [ -d $FILE ]; then
+        exit
+    fi
+    EXT=$(basename $FILE | tr '.' ' ' | awk '{print($2)}')
+    LANG=$(cat langmatrix.json | jq -r ".$EXT")
+    echo "### $FILE"
+    echo "\`\`\`"$LANG
+    cat $FILE
+    echo -e "\n\`\`\`"
+else
+    rm -f out.md
+    find | grep -vP '(git|build|target|logo|lock)' | xargs -n 1 ./csa _createf >out.md
+fi

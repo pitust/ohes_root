@@ -10,3 +10,5 @@ There is a handy oneliner:
 ```
 git submodule update --remote kernel ohbuild && git add . && git commit -s -m "Update submodules" && git push origin main
 ```
+## Generating code
+Use `csa`. The name is _borrowed_ from v8's builtin codegen thing, CodeStubAssembler. You need `jq` for that though.

@@ -1,0 +1,11 @@
+{
+    "rs": "rust",
+    "md": "md",
+    "fish": "fish",
+    "sh": "bash",
+    "Makefile": "make",
+    "js": "typescript",
+    "ts": "typescript",
+    "json": "json",
+    "toml": "toml"
+}
